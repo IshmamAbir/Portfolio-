@@ -11,7 +11,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestComponent } from './test/test.component';
 import { CertificationsComponent } from './certifications/certifications.component';
-import { PortfolioService} from './portfolio/portfolio/portfolio.service'
+import { PortfolioService} from './portfolio/portfolio/portfolio.service';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PortfolioService} from './portfolio/portfolio/portfolio.service'
     SkillsComponent,
     PortfolioComponent,
     TestComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
