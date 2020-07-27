@@ -3,16 +3,33 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { AboutComponent } from './about/about.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestComponent } from './test/test.component';
+import { CertificationsComponent } from './certifications/certifications.component';
+import { PortfolioService} from './portfolio/portfolio/portfolio.service'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    AboutComponent,
+    ExperiencesComponent,
+    EducationComponent,
+    SkillsComponent,
+    PortfolioComponent,
+    TestComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
